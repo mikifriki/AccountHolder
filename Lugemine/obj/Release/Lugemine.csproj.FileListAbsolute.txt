@@ -1,0 +1,16 @@
+C:\Users\Mihkel\source\repos\Lugemine\Lugemine\bin\Release\ContactID.mdf
+C:\Users\Mihkel\source\repos\Lugemine\Lugemine\bin\Release\ContactID_log.ldf
+C:\Users\Mihkel\source\repos\Lugemine\Lugemine\bin\Release\Lugemine.exe.config
+C:\Users\Mihkel\source\repos\Lugemine\Lugemine\bin\Release\Lugemine.exe.manifest
+C:\Users\Mihkel\source\repos\Lugemine\Lugemine\bin\Release\Lugemine.application
+C:\Users\Mihkel\source\repos\Lugemine\Lugemine\bin\Release\Lugemine.exe
+C:\Users\Mihkel\source\repos\Lugemine\Lugemine\bin\Release\Lugemine.pdb
+C:\Users\Mihkel\source\repos\Lugemine\Lugemine\obj\Release\Lugemine.Form1.resources
+C:\Users\Mihkel\source\repos\Lugemine\Lugemine\obj\Release\Lugemine.Properties.Resources.resources
+C:\Users\Mihkel\source\repos\Lugemine\Lugemine\obj\Release\Lugemine.csproj.GenerateResource.Cache
+C:\Users\Mihkel\source\repos\Lugemine\Lugemine\obj\Release\Lugemine.csproj.CoreCompileInputs.cache
+C:\Users\Mihkel\source\repos\Lugemine\Lugemine\obj\Release\Lugemine.exe.manifest
+C:\Users\Mihkel\source\repos\Lugemine\Lugemine\obj\Release\Lugemine.application
+C:\Users\Mihkel\source\repos\Lugemine\Lugemine\obj\Release\Lugemine.exe
+C:\Users\Mihkel\source\repos\Lugemine\Lugemine\obj\Release\Lugemine.pdb
+C:\Users\Mihkel\source\repos\Lugemine\Lugemine\obj\Release\Lugemine.csprojResolveAssemblyReference.cache
