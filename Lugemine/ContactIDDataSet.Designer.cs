@@ -526,7 +526,6 @@ namespace Lugemine {
                 this.columnContactID.AutoIncrementStep = -1;
                 this.columnContactID.AllowDBNull = false;
                 this.columnContactID.Unique = true;
-                this.columnName.ReadOnly = true;
                 this.columnName.MaxLength = 100;
                 this.columnCompany.MaxLength = 100;
                 this.columnTelephone.MaxLength = 100;

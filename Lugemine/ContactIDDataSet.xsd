@@ -4,7 +4,7 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ContactIDConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="ContactIDConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Lugemine.Properties.Settings.GlobalReference.Default.ContactIDConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ContactIDConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ContactIDConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Lugemine.Properties.Settings.GlobalReference.Default.ContactIDConnectionString" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PeopleTableAdapter" GeneratorDataComponentClassName="PeopleTableAdapter" Name="People" UserDataComponentName="PeopleTableAdapter">
@@ -99,11 +99,11 @@ SELECT ContactID, Name, Company, Telephone, Email, Client, LastCall FROM People 
   <xs:element name="ContactIDDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ContactIDDataSet" msprop:Generator_UserDSName="ContactIDDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="People" msprop:Generator_TableClassName="PeopleDataTable" msprop:Generator_TableVarName="tablePeople" msprop:Generator_RowChangedName="PeopleRowChanged" msprop:Generator_TablePropName="People" msprop:Generator_RowDeletingName="PeopleRowDeleting" msprop:Generator_RowChangingName="PeopleRowChanging" msprop:Generator_RowEvHandlerName="PeopleRowChangeEventHandler" msprop:Generator_RowDeletedName="PeopleRowDeleted" msprop:Generator_RowClassName="PeopleRow" msprop:Generator_UserTableName="People" msprop:Generator_RowEvArgName="PeopleRowChangeEvent">
+        <xs:element name="People" msprop:Generator_TableClassName="PeopleDataTable" msprop:Generator_TableVarName="tablePeople" msprop:Generator_TablePropName="People" msprop:Generator_RowDeletingName="PeopleRowDeleting" msprop:Generator_RowChangingName="PeopleRowChanging" msprop:Generator_RowEvHandlerName="PeopleRowChangeEventHandler" msprop:Generator_RowDeletedName="PeopleRowDeleted" msprop:Generator_UserTableName="People" msprop:Generator_RowChangedName="PeopleRowChanged" msprop:Generator_RowEvArgName="PeopleRowChangeEvent" msprop:Generator_RowClassName="PeopleRow">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="ContactID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnContactID" msprop:Generator_ColumnPropNameInRow="ContactID" msprop:Generator_ColumnPropNameInTable="ContactIDColumn" msprop:Generator_UserColumnName="ContactID" type="xs:int" minOccurs="0" />
-              <xs:element name="Name" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" minOccurs="0">
+              <xs:element name="ContactID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnContactID" msprop:Generator_ColumnPropNameInRow="ContactID" msprop:Generator_ColumnPropNameInTable="ContactIDColumn" msprop:Generator_UserColumnName="ContactID" type="xs:int" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="100" />
@@ -136,7 +136,7 @@ SELECT ContactID, Name, Company, Telephone, Email, Client, LastCall FROM People 
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent">
           <xs:complexType>
           </xs:complexType>
         </xs:element>

@@ -19,7 +19,7 @@ namespace Lugemine
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Password manager 1.0.\n Mihkel Liblikman"); // tekitab tekstikasti
+            MessageBox.Show("Password manager 1.0.\n Mikifriki"); // tekitab tekstikasti
             //Stringis nagu üleval paneb tähis \n järgmise teksti järgmisele reale.
         }
 
@@ -64,6 +64,11 @@ namespace Lugemine
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void contactIDLabel_Click(object sender, EventArgs e)
         {
 
         }

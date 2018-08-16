@@ -52,12 +52,12 @@
             this.companyTextBox = new System.Windows.Forms.TextBox();
             this.emailTextBox = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.clientCheckBox = new System.Windows.Forms.CheckBox();
             this.peopleBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.contactIDDataSet = new Lugemine.ContactIDDataSet();
             this.peopleTableAdapter = new Lugemine.ContactIDDataSetTableAdapters.PeopleTableAdapter();
             this.tableAdapterManager = new Lugemine.ContactIDDataSetTableAdapters.TableAdapterManager();
-            this.clientCheckBox = new System.Windows.Forms.CheckBox();
+            this.nameTextBox = new System.Windows.Forms.TextBox();
             nameLabel = new System.Windows.Forms.Label();
             companyLabel = new System.Windows.Forms.Label();
             emailLabel = new System.Windows.Forms.Label();
@@ -73,20 +73,20 @@
             // nameLabel
             // 
             nameLabel.AutoSize = true;
-            nameLabel.Font = new System.Drawing.Font("Times New Roman", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            nameLabel.Location = new System.Drawing.Point(7, 63);
+            nameLabel.Font = new System.Drawing.Font("Sylfaen", 10F, System.Drawing.FontStyle.Underline);
+            nameLabel.Location = new System.Drawing.Point(12, 63);
             nameLabel.Name = "nameLabel";
-            nameLabel.Size = new System.Drawing.Size(95, 15);
+            nameLabel.Size = new System.Drawing.Size(98, 18);
             nameLabel.TabIndex = 5;
             nameLabel.Text = "Kasutajatunnus:";
             // 
             // companyLabel
             // 
             companyLabel.AutoSize = true;
-            companyLabel.Font = new System.Drawing.Font("Times New Roman", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            companyLabel.Location = new System.Drawing.Point(58, 89);
+            companyLabel.Font = new System.Drawing.Font("Sylfaen", 10F, System.Drawing.FontStyle.Underline);
+            companyLabel.Location = new System.Drawing.Point(58, 90);
             companyLabel.Name = "companyLabel";
-            companyLabel.Size = new System.Drawing.Size(44, 15);
+            companyLabel.Size = new System.Drawing.Size(48, 18);
             companyLabel.TabIndex = 7;
             companyLabel.Text = "Parool:";
             companyLabel.Click += new System.EventHandler(this.companyLabel_Click);
@@ -94,32 +94,35 @@
             // emailLabel
             // 
             emailLabel.AutoSize = true;
-            emailLabel.Font = new System.Drawing.Font("Times New Roman", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            emailLabel.Location = new System.Drawing.Point(64, 118);
+            emailLabel.Font = new System.Drawing.Font("Sylfaen", 10F, System.Drawing.FontStyle.Underline);
+            emailLabel.ForeColor = System.Drawing.SystemColors.ControlText;
+            emailLabel.Location = new System.Drawing.Point(63, 118);
             emailLabel.Name = "emailLabel";
-            emailLabel.Size = new System.Drawing.Size(38, 15);
+            emailLabel.Size = new System.Drawing.Size(43, 18);
             emailLabel.TabIndex = 11;
             emailLabel.Text = "Email:";
             // 
             // clientLabel
             // 
             clientLabel.AutoSize = true;
-            clientLabel.Font = new System.Drawing.Font("Times New Roman", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            clientLabel.Location = new System.Drawing.Point(30, 144);
+            clientLabel.Font = new System.Drawing.Font("Sylfaen", 10F, System.Drawing.FontStyle.Underline);
+            clientLabel.Location = new System.Drawing.Point(32, 141);
             clientLabel.Name = "clientLabel";
-            clientLabel.Size = new System.Drawing.Size(72, 15);
+            clientLabel.Size = new System.Drawing.Size(74, 18);
             clientLabel.TabIndex = 13;
             clientLabel.Text = "Autenditud:";
             // 
             // contactIDLabel
             // 
             contactIDLabel.AutoSize = true;
-            contactIDLabel.Font = new System.Drawing.Font("Times New Roman", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            contactIDLabel.Location = new System.Drawing.Point(33, 37);
+            contactIDLabel.Font = new System.Drawing.Font("Sylfaen", 10F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            contactIDLabel.ForeColor = System.Drawing.SystemColors.InfoText;
+            contactIDLabel.Location = new System.Drawing.Point(34, 39);
             contactIDLabel.Name = "contactIDLabel";
-            contactIDLabel.Size = new System.Drawing.Size(70, 15);
+            contactIDLabel.Size = new System.Drawing.Size(72, 18);
             contactIDLabel.TabIndex = 3;
             contactIDLabel.Text = "Sait/teenus:";
+            contactIDLabel.Click += new System.EventHandler(this.contactIDLabel_Click);
             // 
             // peopleBindingNavigator
             // 
@@ -147,7 +150,7 @@
             this.peopleBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.peopleBindingNavigator.Name = "peopleBindingNavigator";
             this.peopleBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.peopleBindingNavigator.Size = new System.Drawing.Size(607, 25);
+            this.peopleBindingNavigator.Size = new System.Drawing.Size(540, 25);
             this.peopleBindingNavigator.TabIndex = 1;
             this.peopleBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -251,7 +254,7 @@
             // 
             this.telephoneTextBox.BackColor = System.Drawing.SystemColors.Info;
             this.telephoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.peopleBindingSource, "Name", true));
-            this.telephoneTextBox.Location = new System.Drawing.Point(108, 61);
+            this.telephoneTextBox.Location = new System.Drawing.Point(116, 63);
             this.telephoneTextBox.Name = "telephoneTextBox";
             this.telephoneTextBox.Size = new System.Drawing.Size(200, 20);
             this.telephoneTextBox.TabIndex = 6;
@@ -261,7 +264,7 @@
             // 
             this.companyTextBox.BackColor = System.Drawing.SystemColors.Info;
             this.companyTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.peopleBindingSource, "Company", true));
-            this.companyTextBox.Location = new System.Drawing.Point(108, 87);
+            this.companyTextBox.Location = new System.Drawing.Point(116, 90);
             this.companyTextBox.Name = "companyTextBox";
             this.companyTextBox.Size = new System.Drawing.Size(200, 20);
             this.companyTextBox.TabIndex = 8;
@@ -270,7 +273,7 @@
             // 
             this.emailTextBox.BackColor = System.Drawing.SystemColors.Info;
             this.emailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.peopleBindingSource, "Email", true));
-            this.emailTextBox.Location = new System.Drawing.Point(108, 113);
+            this.emailTextBox.Location = new System.Drawing.Point(116, 116);
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.Size = new System.Drawing.Size(200, 20);
             this.emailTextBox.TabIndex = 12;
@@ -278,22 +281,22 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Lugemine.Properties.Resources.Salvestus11;
-            this.pictureBox1.Location = new System.Drawing.Point(326, 35);
+            this.pictureBox1.Location = new System.Drawing.Point(327, 37);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(149, 106);
+            this.pictureBox1.Size = new System.Drawing.Size(102, 96);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // textBox1
+            // clientCheckBox
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Info;
-            this.textBox1.Location = new System.Drawing.Point(108, 35);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 20);
-            this.textBox1.TabIndex = 15;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.clientCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.peopleBindingSource, "Client", true));
+            this.clientCheckBox.Location = new System.Drawing.Point(116, 139);
+            this.clientCheckBox.Name = "clientCheckBox";
+            this.clientCheckBox.Size = new System.Drawing.Size(200, 24);
+            this.clientCheckBox.TabIndex = 14;
+            this.clientCheckBox.UseVisualStyleBackColor = true;
             // 
             // peopleBindingSource
             // 
@@ -315,22 +318,22 @@
             this.tableAdapterManager.PeopleTableAdapter = this.peopleTableAdapter;
             this.tableAdapterManager.UpdateOrder = Lugemine.ContactIDDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // clientCheckBox
+            // nameTextBox
             // 
-            this.clientCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.peopleBindingSource, "Client", true));
-            this.clientCheckBox.Location = new System.Drawing.Point(108, 139);
-            this.clientCheckBox.Name = "clientCheckBox";
-            this.clientCheckBox.Size = new System.Drawing.Size(200, 24);
-            this.clientCheckBox.TabIndex = 14;
-            this.clientCheckBox.UseVisualStyleBackColor = true;
+            this.nameTextBox.BackColor = System.Drawing.SystemColors.Info;
+            this.nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.peopleBindingSource, "Name", true));
+            this.nameTextBox.Location = new System.Drawing.Point(116, 37);
+            this.nameTextBox.Name = "nameTextBox";
+            this.nameTextBox.Size = new System.Drawing.Size(200, 20);
+            this.nameTextBox.TabIndex = 15;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(607, 263);
-            this.Controls.Add(this.textBox1);
+            this.BackColor = System.Drawing.SystemColors.Menu;
+            this.ClientSize = new System.Drawing.Size(540, 200);
+            this.Controls.Add(this.nameTextBox);
             this.Controls.Add(contactIDLabel);
             this.Controls.Add(nameLabel);
             this.Controls.Add(this.telephoneTextBox);
@@ -379,8 +382,8 @@
         private System.Windows.Forms.TextBox telephoneTextBox;
         private System.Windows.Forms.TextBox companyTextBox;
         private System.Windows.Forms.TextBox emailTextBox;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.CheckBox clientCheckBox;
+        private System.Windows.Forms.TextBox nameTextBox;
     }
 }
 

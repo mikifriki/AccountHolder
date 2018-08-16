@@ -9,3 +9,10 @@
         }
     }
 }
+
+namespace Lugemine.ContactIDDataSetTableAdapters {
+    
+    
+    public partial class PeopleTableAdapter {
+    }
+}

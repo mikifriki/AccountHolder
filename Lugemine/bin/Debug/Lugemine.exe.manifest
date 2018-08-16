@@ -49,7 +49,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>geDXfaZLJghHIWnXdAsLj31qH5lEMCVbDzSx58t8wXc=</dsig:DigestValue>
+        <dsig:DigestValue>5WjTX2JdAnQ5vDxML1DaX98nlthJrSE/4bR5Qa1a0C0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -59,7 +59,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>kAnQYy+jHK0FRgfa4Dkw8gt0GjbmUIUwszS9gyDGBGY=</dsig:DigestValue>
+      <dsig:DigestValue>lU2ppOPN0ug8LCU7sG+Kk45xYThTxVD6+4EpBI8Ll94=</dsig:DigestValue>
     </hash>
   </file>
   <file name="ContactID_log.ldf" size="8388608" writeableType="applicationData">
@@ -68,7 +68,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>+V9mNIo9XJCajBSdo/6iDE5qc7GNwuM+maiJwOK5fKU=</dsig:DigestValue>
+      <dsig:DigestValue>3qzmYURO/ARpDXhYDwM8BlUDhQIZVmwX5utAMaSyfiU=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Lugemine.exe.config" size="553">
